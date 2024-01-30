@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Cuestionario</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    </head> 
+  
+    <body id="bom">
+        <center><header id="hem">Ponte a prueba: Matemáticas</header><br></center>
+        <div class="apama" id="diva"> </div>
+        <section id="contrarreloj"> 
+                <h3>Tiempo restante: </h3><h3 id="minutos"></h3><h3>:</h3><h3 id="segundos"></h3>
+        </section> 
+        <script src="validmat.js"></script>
+    <center><form id="fom">
+                <fieldset id="fsm">
+                    <legend id="lem">1.-¿Cuál es la representación gráfica del número nueve mil treinta y seis?</legend>
+                        <input type="radio" name="r1" id="r1" value="bien"><a>9036</a><br>
+                        <input type="radio" name="r1" id="r1" value="mal"><a>900036</a><br>
+                        <input type="radio" name="r1" id="r1" value="mal"><a>9100036</a>
+                </fieldset><br>
+                <fieldset id="fsm">
+                    <legend id="lem">2.-Aproxima el número 58 a la decena</legend>
+                        <input type="radio" name="r2" id="r2" value="bien"><a>60</a><br>
+                        <input type="radio" name="r2" id="r2" value="mal"><a>55</a><br>
+                        <input type="radio" name="r2" id="r2" value="mal"><a>50</a>
+                </fieldset><br>
+                <fieldset id="fsm">
+                    <legend id="lem">3.-¿cúal es el número ordinal trigésimo quinto en cifras?</legend>
+                        <input type="radio" name="r3" id="r3" value="mal"><a>135</a><br>
+                        <input type="radio" name="r3" id="r3" value="bien"><a>35</a><br>
+                        <input type="radio" name="r3" id="r3" value="mal"><a>335</a>
+                </fieldset><br>
+                <fieldset id="fsm">
+                    <legend id="lem">4.-Verdaderoo Falso: "X" en romano es 5</legend>
+                        <input type="radio" name="r4" id="r4" value="mal">  <a>Verde</a><br>
+                        <input type="radio" name="r4" id="r4" value="bien"> <a>Falso</a>
+                </fieldset><br>
+                <fieldset id="fsm">
+                    <legend id="lem">5.-¿Cuánto es 19 + 2?</legend>
+                        <input type="radio" name="r5" id="r5" value="mal"><a>192</a><br>
+                        <input type="radio" name="r5" id="r5" value="mal"><a>22</a><br>
+                        <input type="radio" name="r5" id="r5" value="bien"><a>21</a>
+                </fieldset><br>
+                <fieldset id="fsm">
+                    <legend id="lem">6.-Para calcular cuánto es un tercio de 3996, ¿qué tienes que hacer?</legend>
+                        <input type="radio" name="r6" id="r6" value="bien"><a>Dividir entre 3</a><br>
+                        <input type="radio" name="r6" id="r6" value="mal"><a>Multiplicar por 3</a><br>
+                        <input type="radio" name="r6" id="r6" value="mal"><a>Dejar que se haga solo</a>
+                </fieldset><br>
+                <fieldset id="fsm">
+                    <legend id="lem">7.-Cuando tu hermano tenía 3 años, tú tenías 6, ahora él tiene 25, ¿cuántos años tienes tú?</legend>
+                        <input type="radio" name="r7" id="r7" value="mal"><a>50</a><br>
+                        <input type="radio" name="r7" id="r7" value="mal"><a> No sé</a><br>
+                        <input type="radio" name="r7" id="r7" value="bien"><a>28</a>
+                </fieldset><br>
+                <fieldset id="fsm">
+                    <legend id="lem">8.-¿Cuál es el nombre del triángulo que tiene dos lados iguales y uno desigual?</legend>
+                        <input type="radio" name="r8" id="r8" value="mal"><a>Escaleno</a><br>
+                        <input type="radio" name="r8" id="r8" value="bien"><a>isósceles</a><br>
+                        <input type="radio" name="r8" id="r8" value="mal"><a>Clifford</a>
+                </fieldset><br>
+                <fieldset id="fsm">
+                    <legend id="lem">9.-¿Cómo puedes comprobar si has hecho bien una división?</legend>
+                        <input type="radio" name="r9" id="r9" value="mal"><a>Pidiendole a Diosito</a><br>
+                        <input type="radio" name="r9" id="r9" value="bien"><a>Multiplicando el cociente por el divisor y sumando el resto si lo hay.</a><br>
+                        <input type="radio" name="r9" id="r9" value="mal"><a>Confiando es tus capacidades</a>
+                </fieldset><br>
+                <fieldset id="fsm">
+                    <legend id="lem">10.-¿Cúanto es 5+5*5?</legend>
+                        <input type="radio" name="r10" id="r10" value="bien"><a>30</a><br>
+                        <input type="radio" name="r10" id="r10" value="mal"><a>50</a><br>
+                        <input type="radio" name="r10" id="r10" value="mal"><a>25</a>
+                </fieldset><br>
+                <center>
+                <input type="button" value="Calificar" onclick="calificar()" id="btnm">
+                <input type="button" value="Regresar" onclick="location.href='index.html'" id="btnm"></center>
+        </form></center>
+    </body>
+</html>

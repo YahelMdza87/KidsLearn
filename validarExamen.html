@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresa tus datos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body style="background-color: teal;">
+    <div>
+    <form id="marco_validacion">
+        <div id="titulo" style="background-color: rgb(0, 222, 222);">
+            <br>
+            <center><h1>Matematicas</h1></center>
+        </div>
+        <script>
+            var comprobador=0;
+            function colorear(objeto){
+                if(document.getElementById(objeto).value!=""){
+                    document.getElementById(objeto).style.backgroundColor="#20F90B";
+                    comprobador++;
+                    console.log(comprobador);
+                }else{
+                    document.getElementById(objeto).style.backgroundColor="red";
+                    alert("este campo es obligatorio");
+                }
+            }
+            function confirmar(){
+                if(comprobador==2){
+                    console.log("ndjanda");
+                    window.open("cuestiomate.html");
+                }
+                else {
+
+                }
+            }
+        </script>
+        <label>Nombre/s: </label><input style="width: 300px;" type="text" id="nombre" onblur="colorear('nombre')" required><br></br>
+        <label>Apellido: </label><input style="width: 300px;" type="text" id="ap" onblur="colorear('ap')" required><br></br>
+        <!-- <a href="cuestiomate.html"><input type="button" value="Realizar" class="btn_validacion"></a> -->
+        <input type="submit" value="Realizar" onclick="confirmar()" class="btn_validacion">
+        <!-- <a href="cuestiomate.html"><button class="btn_validacion" >Realizar</button></a> -->
+    </form>
+</div>
+</body>
+</html>
